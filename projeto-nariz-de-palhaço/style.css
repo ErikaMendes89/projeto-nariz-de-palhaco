@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  h3 {
+    font-size: 25px !important;
+  }
+  
+  .btn-success:hover {
+    background-color: red;
+  }
+  
+
+ 
+  
+  canvas {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    display: block;
+    margin: 70px;
+    position: relative;
+  }
+  
+  button {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  @keyframes example {
+    from {
+      box-shadow: 1px 1px 38px red;
+    }
+  
+    to {
+      box-shadow: 1px 1px 38px yellow;
+    }
+  }
+  
